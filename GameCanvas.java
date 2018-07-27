@@ -12,9 +12,7 @@ public class GameCanvas extends JPanel {
     GameCanvas(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
         lastFrameTime = System.nanoTime();
-        setBackground(BackgroundColor.getColor());
-        counter++;
-        if(counter == 25) counter = 0;
+
     }
 
     @Override
@@ -24,6 +22,11 @@ public class GameCanvas extends JPanel {
         long currentTime = System.nanoTime();
         float deltaTime = (currentTime - lastFrameTime) * 0.000000001f;
         lastFrameTime = currentTime;
+
+        setBackground(BackgroundColor.getColor());
+        counter++;
+        if(counter == 25)   counter= 0;
+
 
         // friday magic
         try {

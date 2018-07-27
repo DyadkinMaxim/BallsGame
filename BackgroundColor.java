@@ -6,6 +6,6 @@ public class BackgroundColor {
 
 
 public static Color getColor(){
-    return  c2 =  new Color(c1.getRed()-(GameCanvas.counter * 10) ,c1.getGreen()- (GameCanvas.counter * 10) ,c1.getBlue()- (GameCanvas.counter * 10) );
+    return  c2 =  new Color(c1.getRed() -(GameCanvas.counter * 10) ,c1.getGreen() - (GameCanvas.counter * 10),c1.getBlue()- (GameCanvas.counter * 10) );
 }
 }
